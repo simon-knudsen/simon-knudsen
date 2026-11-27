@@ -19,5 +19,5 @@
 ![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
 
 # 📊 GitHub Stats
-![](https://github-readme-stats.vercel.app/api?username=xsol05&theme=radical&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-profile-trophy.vercel.app/?username=xsol05&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+![](https://github-readme-stats.vercel.app/api?username=simon-knudsen&theme=radical&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://github-profile-trophy.vercel.app/?username=simon-knudsen&theme=radical&no-frame=false&no-bg=true&margin-w=4)
