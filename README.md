@@ -1,4 +1,4 @@
-👋 Hi, I'm Simon!
+# 👋 Hi, I'm Simon!
 👩🏻‍💻 Cloud DevOps Engineer sharing about my journey and learnings in tech<br/>
 👩🏻‍🎓 Studied DevOps through Bootcamp and AWS/Azure Certifications<br/>
 💭 Currently learning about Ansible and Prometheus!<br/>
