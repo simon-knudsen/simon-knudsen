@@ -1,3 +1,68 @@
+# Simon Knudsen — Cloud / DevOps Engineer
+
+I work with Terraform, Ansible, and Kubernetes on AWS. Three projects below.
+Each one is a repo you can open, with notes on the choices I made.
+
+📍 Copenhagen · AWS Certified — <Cloud Practitioner / Solutions Architect – Associate>
+
+**Contact:** [GitHub](https://github.com/simonknudsen) · [LinkedIn](https://linkedin.com/in/simonknudsen) · [simon.knudsen@example.com](mailto:simon.knudsen@example.com)
+
+---
+
+## Projects
+
+### [AWS Infrastructure with Terraform →](./terraform-aws-infrastructure/README.md)
+
+**Problem:** setting up dev and staging by hand meant they never quite matched.
+
+**Technologies used:** `Terraform` · `AWS` · `VPC` · `IAM` · `S3`
+
+Reusable modules so dev and staging come from the same code instead of being
+set up by hand, so they end up the same every time. The one difference I left in
+on purpose: staging runs a NAT gateway and dev doesn't, since there's no point
+paying for traffic dev never sends.
+
+### [Server Configuration with Ansible →](./ansible-config-automation/README.md)
+
+**Problem:** every new server was set up by hand, so no two ended up configured the same.
+
+**Technologies used:** `Ansible` · `Linux` · `Docker` · `Nginx`
+
+Roles that take a fresh Ubuntu machine and set it up with Docker and sensible
+login security, the same way every time. The SSH settings live in their own file
+so it's easy to see what's being changed, and passwords and keys go in
+ansible-vault for security purposes.
+
+### [Kubernetes on EKS with Helm →](./kubernetes-eks-platform/README.md)
+
+**Problem:** shipping the same app to dev and staging meant hand-editing manifests each time.
+
+**Technologies used:** `Kubernetes` · `Helm` · `AWS EKS` · `Docker`
+
+One Helm chart that deploys the app to both dev and staging — to switch
+environments I just change a config file instead of rewriting everything by
+hand. Each environment gets its own space on the cluster with resource limits
+and an ingress for traffic. Every container is given a set amount of CPU and
+memory so one app can't take it all, and image versions are pinned instead of
+using `latest`, so what you deploy is what you tested.
+
+---
+
+## Skills
+
+- **Cloud:** AWS (VPC, IAM, EC2, S3, EKS)
+- **IaC:** Terraform, Ansible
+- **Containers:** Docker, Kubernetes, Helm
+- **Monitoring:** Prometheus, Grafana
+- **CI & scripting:** Git, Jenkins, Python, Bash
+
+
+
+-------
+
+
+
+
 # 👋 Hi, I'm Simon!
 👩🏻‍💻 Cloud DevOps Engineer sharing about my journey and learnings in tech<br/>
 👩🏻‍🎓 Studied DevOps through Bootcamp and AWS/Azure Certifications<br/>
